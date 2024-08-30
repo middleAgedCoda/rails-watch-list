@@ -1,11 +1,10 @@
-<div class="mt-4 p-3 text-center">
+<div class="p-3 text-start">
 <ul>
   <button class="btn btn-secondary mb-3">All Lists</button>
   <% @lists.each do |list| %>
-    <li class="mb-2">
+    <li class="mb-2 p-2 my-1">
       <%= list.name %>
-      <%= link_to 'View Details', list_path(list), class: 'btn btn-primary' %>
-    </li>
+      <%= link_to 'View Details', list_path(list), class: 'btn btn-primary' %></li>
   <% end %>
 </ul>
 </div>
